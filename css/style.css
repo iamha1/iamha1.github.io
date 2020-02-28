@@ -10,3 +10,13 @@
 .far {
     color: white;
 }
+
+img {
+    width: 100%;
+}
+
+@media (max-width: 576px) { 
+    img {
+        width: 100%;
+    }
+}
