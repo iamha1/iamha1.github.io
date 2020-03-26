@@ -1,105 +1,326 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
-    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>HÀ NGUYEN PROFILE</title>
+  <style>
+    header{
+      background: url(img/ocean.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 300px;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 200px;
+      }
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+  </style>
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand text-white font-weight-bold" href="index.html">Ha Nguyen</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-     <!-- font awesome -->
-     <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/iamha/">
-      <i class="fab fa-linkedin fa-lg"></i> </a>
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo">HÀ NGUYEN</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
 
-      <a class="nav-link" target="_blank"
-        href="https://github.com/iamha1/">
-        <i class="fab fa-github-square fa-lg"></i></a>
+          <li><a href="https://www.linkedin.com/in/iamha/" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="LinkedIn"> 
+            <i class="fab fa-linkedin"></i> 
+          </a></li>
 
+          <li><a href="https://github.com/iamha1/" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Github">
+            <i class="fab fa-github-square"></i> 
+          </a></li>
+          <li><a href="https://drive.google.com/file/d/1yhj0G1Fmd0mIGIMuG6Rntu5vfdXtE2S8/view" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Resume">
+            <i class="far fa-id-badge"></i>
+          </a></i>
+          </a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-
-
-        <div class="outer-menu">
-          <input class="checkbox-toggle" type="checkbox" />
-          <div class="hamburger">
-            <div></div>
-          </div>
-          <div class="menu">
-            <div>
-              <div>
-                <ul>
-                  <li><a target="_blank" href="http://iamha1.github.io">About</a></li>
-                  <li><a target="_blank" href="http://iamha1.github.io/portfolio">Portfolio</a></li>
-                  <li><a target="_blank" href="http://iamha1.github.io/img/ha-nguyen-resume-2020.pdf">Resume</a></li>
-                  <li><a target="_blank" href="http://iamha1.github.io/portfolio">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <section class="navbar-collapse collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white font-weight-bold" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" href="https://drive.google.com/file/d/1yhj0G1Fmd0mIGIMuG6Rntu5vfdXtE2S8/view?usp=sharing">Resume</a>
-            </li>
-          </ul>
-        </section>
-  </nav>
-  <section class="jumbotron jumbotron-fluid">
-    <section class="container">
-      <h1 class="display text-center">Welcome to my humble nest!</h1>
-      
-      <!-- <p class="lead text-center">Welcome to my humble nest!</p> -->
-    </section>
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="about">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/ha.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Welcome to my humble nest!</h2>
+        <h6>Oh, Hello! <br> My name is Hà Nguyen. I come from Hanoi, Vietnam. During my 8 years as an expat in the US, I started as a student then moved on to work in higher education. I am a highly driven individual with strong work ethics wanting to create clean, practical and intuitive applications. I am an excellent team player bolstered by my great interpersonal skills and my ability to adapt and solve problems. <br><br> Oh, I also have enormous love for food, dogs, music, concerts and humans. <br> <br> Thank you for visiting my humble nest!</h6>
+      </div>
+    </div>
+  
   </section>
 
-  <section class="row pl-5 pr-10">
-    <section class="col-12">
-      <section class="page-header">
-        <h2 class="text-dark">ABOUT ME</h2>
-      </section>
-      <section class="pt-3 mb-5 mr-8">
-        <img src="https://raw.githubusercontent.com/iamha1/iamha1.github.io/master/img/IMG_2914.jpg
-        " alt="Picture of Ha Nguyen" style="width:300px" class="float-left img-thumbnail mr-5 col-4">
+  <section class="section container scrollspy" id="portfolio">
+    <div class="row center-align">
+      <!-- <div class="col s12 l4"> -->
+        <h2 class="indigo-text text-darken-4 center-align">What I do... Or my Portfolio</h2>
+        <h5>Hey!<br> Please check out some of my projects that I get to do on my own or with my friends! </h5>
+      <!-- </div> -->
+      <div class="row center-align">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="active indigo-text text-darken-4">Solo Projects</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Group Projects</a>
+          </li>
+        </ul>
+        <div id="photography" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Solo Projects</p>
+            <h5>Check out some of the projects I have worked on by myself!</h5>
 
-        <p class="float-left mr-5 col-8 text-left">
+<!-- Some cards here -->
+<div class="container">
+  <!-- <h2>Cards</h2> -->
+  <div class="row">
+    <div class="col s12 l6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/password-generator-project.jpg" alt="">
+          <a href="http://iamha1.github.io/password-generator/index.html" class="halfway-fab btn-floating pink pulse">
+            <i class="material-icons">favorite</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title"><strong>Password Generator</strong></span>
+          <p>An application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://iamha1.github.io/password-generator/">Demo</a>
+          <a href="https://github.com/iamha1/password-generator">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 l6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/cye-project.jpg" alt="">
+          <a href="https://iamha1.github.io/curb-your-enthusiasm-quiz/" class="halfway-fab btn-floating pink pulse">
+            <i class="material-icons">favorite</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title"><strong>Curb Your Enthusiasm Quiz</strong></span>
+          <p>This is an application that generates timed-code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://iamha1.github.io/curb-your-enthusiasm-quiz/">Demo</a>
+          <a href="https://github.com/iamha1/curb-your-enthusiasm-quiz">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        My name is Ha Nguyen. I come from Hanoi, Vietnam. 
-        <br><br>
-        During my 8 years as an expat in the US, I started as a student then moved on to work in higher education.
-        <br><br>
-        I am a highly driven individual with strong work ethics wanting to create clean, practical and intuitive
-        applications. I am an excellent team player bolstered by my great interpersonal skills and my ability to adapt and solve problems.
-        <br><br>
-        Thank you for visiting my humble nest!
-        </p>
+<div class="container">
+    <div class="row">
+    <div class="col s12 l6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/ha-calendar.jpg" alt="">
+          <a href="https://iamha1.github.io/my-calendar" class="halfway-fab btn-floating pink pulse">
+            <i class="material-icons">favorite</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title"><strong>My Calendar</strong></span>
+          <p>This is a simple calendar application I created for myself so that I could keep track of my schedule, meetings and event at work. My calendar represents my 9-5 working hour and it helps me to manage my time effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://iamha1.github.io/ha-calendar/">Demo</a>
+          <a href="https://github.com/iamha1/my-calendar">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 l6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/burger1.jpg" alt="">
+          <a href="" class="halfway-fab btn-floating pink pulse">
+            <i class="material-icons">favorite</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title"><strong>Burger for Life!</strong></span>
+          <p>Burger for Life! is a restaurant app that lets users put in the names of burgers they'd like to eat as well as create new ones.</p>
+        </div>
+        <div class="card-action">
+          <a href="http://peaceful-ravine-27804.herokuapp.com/">Demo</a>
+          <a href="https://github.com/iamha1/burger-for-life">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            
+   
 
-      </section>
-    </section>`
+<!-- Some cards end here -->
+        </div>
+        <div id="editing" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Group Projects</p>
+            <p>I learned a lot by collaborate with other web developers!</p>
+            <div class="container">
+              <!-- <h2>Cards</h2> -->
+              <div class="row">
+                <div class="col s12 l6">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/sharkFin.jpg" alt="">
+                      <a href="https://https://iamha1.github.io/sharkFin/">
+                        <p class="card-text card-body font-weight-bold text-center" class="halfway-fab btn-floating pink pulse">
+                      
+                      </a>
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title"><strong>SharkFin</strong></span>
+                      <p>sharkFin is a website application that allows the user to search and track stocks based on their company name! The user can then add the specific stock and choose the amount of shares to add to their portfolio. The portfolio will then total up the value of your stock with the amount of shares of each stock and then add those up for a total value of portfolio. Percentage is also provided compared to starting fund.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="https://iamha1.github.io/sharkFin/">Demo</a>
+                      <a href="https://github.com/iamha1/sharkFin">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 l6">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/collabhub.jpg" alt="">
+                      <a href="https://collab-hub.herokuapp.com/" >
+                       
+                      </a>
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title"><strong>CollabHub</strong></span>
+                      <p>This is an application that connects professionals with similar interests and skill sets so that they can work together, discover new opportunities and grow their network.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="https://collab-hub.herokuapp.com/">Demo</a>
+                      <a href="https://github.com/iamha1/collabHub">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/stars.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Let's Get in Touch</h2>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container center-align">
+      <div class="row">
+        <!-- <div class="col l6 s12"> -->
+          <h5>Social Media</h5>
+          <a href="https://www.facebook.com/hanguyenhanoi" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/hanguyen105" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/haprinzessin/" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+         </div>
+        
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2020 Ha Nguyen</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      // $('.datepicker').datepicker({
+      //   disableWeekends: true,
+      //   yearRange: 1
+      // });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+
+    });
+  </script>
 </body>
-
 </html>
