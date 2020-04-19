@@ -7,7 +7,6 @@
 
 ![login](img/profile1.jpg) 
 ![login](img/profile2.jpg) 
-![login](img/mobile1.jpg) 
 ![login](img/mobile2.jpg) 
 
 - The page is designed using Materialize CSS, fontawesome, JQuery and HTML5.
