@@ -95,8 +95,8 @@
       <div class="col s12 l4">
         <img src="img/ha.jpg" alt="" class="responsive-img materialboxed">
       </div>
-      <div class="col s12 l6 offset-l1">
-        <h2 class="indigo-text text-darken-4">Welcome to my humble nest!</h2>
+      <div class="col s12 l6 offset-l1 font-weight-bold">
+        <h2 class="indigo-text text-darken-4 ">Welcome to my humble nest!</h2>
         <h6>Oh, Hello! <br> <br>My name is Hà Nguyễn. I come from Hanoi, Vietnam. During my 8 years as an expat in the US, I
           started as a student then moved on to work in higher education. I am a highly driven individual with strong
           work ethics wanting to create clean, practical and intuitive applications. I am an excellent team player
@@ -336,7 +336,7 @@
         <h2 class="indigo-text text-darken-4">Let's Get in Touch</h2>
       </div>
       <div class="col s12 l5 offset-l2">
-        <form>
+        <!-- <form>
           <div class="input-field">
             <i class="material-icons prefix">email</i>
             <input type="email" id="email">
@@ -351,7 +351,28 @@
           <div class="input-field center">
             <button class="btn">Submit</button>
           </div>
-        </form>
+        </form> -->
+
+
+        <form
+        action="https://formspree.io/FORM_ID"
+        method="POST"
+      >
+        <label>
+          Your Name:
+          <input type="text" name="name">
+        </label>
+        <label>
+          Your Email:
+          <input type="email" name="_replyto">
+        </label>
+        <label>
+          Message:
+          <textarea name="message"></textarea>
+        </label>
+        <input type="submit" value="Send">
+      </form>
+
       </div>
     </div>
   </section>
